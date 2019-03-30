@@ -1,0 +1,8 @@
+$Problema de los Baldes$
+
+Dom {da:[0..5], db:[0,1,2,3]}
+Struct [da:A:"Balde A de 5 litros", db:B:"Balde B de 3 litros"]
+Law {vaciarA:hola¿A>0?:[0,B], vaciarB:¿B>0?:[A,0]}
+End {[4,0], ¿A+B==4?}
+
+$Fin del Problema$
