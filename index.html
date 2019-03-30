@@ -5,13 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Automaton Languaje</title>
+    <title>Automaton Language</title>
     <script src="js/jquery.js"></script>
     <script src="js/automaton.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/automaton.css">
 </head>
 
 <body>
-    <p id="parrafo" style="white-space: pre;"></p>
+    <div class="container">
+        <h1>Automaton Language</h1>
+        <br>
+        <div class="form-group">
+            <label for="grammar">Grammar:</label>
+            <button class="btn btn-secondary" id="test">Test</button>
+            <textarea class="form-control" rows="5" id="grammar"></textarea>
+        </div>
+        <br>
+        <p id="lexico">Aquí se muestra el resultado del Análisis Léxico.</p>
+        <br>
+        <p id="sintactico">Aquí se muestra el resultado del Análisis Sintáctico.</p>
+    </div>
 </body>
 
 </html>

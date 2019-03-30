@@ -1,0 +1,11 @@
+$ Inicio del Programa $
+a0 = { [s0, s1, s2], ['A', 'B', 'C'], s0, [f(s0, 'A') := s1, f(s0, 'B') := s2], [s2] };
+a1 = { [s0, s1, s2], ['1', '2', '3'], s0, [f(s0, '1') := s1, f(s0, '2') := s2], [s1, s2] };
+e0 = /Esto es un expresion regular/g;
+e1 = /Esto es otra expresion regular/g;
+e2 = /Y este es otro ejemplo más de expresion regular/g;
+Edit(a0); Edit(e0); Minimizar(a1); Graph(e2); Graph(a0);
+a0 = toAFND(e2); a1 = toAFD(a0); e1 = toER(a1);
+a3 = Union(a0, a1); a4 = Intersect(a0, a1); a5 = Diferencia(a0, a1);
+Test(e1, 'Esta es una cadena de prueba para la ER número 1');
+$ Fin del Programa $
